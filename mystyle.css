@@ -1,0 +1,569 @@
+@font-face {
+  font-family: "beyond_the_mountains";
+  src: url("./fonts/beyond_the_mountains.ttf") format("truetype");
+}
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* header */
+header.header {
+  background-image:linear-gradient(90deg, rgba(0, 219, 222, 0.4) 0%, rgba(252, 0, 255, 0.4) 100%),
+    url("./images/hero_banner.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+/* navtop */
+.nav_top {
+  background-color: #350a4e;
+  height: 36px;
+}
+
+.nav_top a:hover {
+  color: #fa9e1b;
+}
+
+.nav_top__info ul,
+.nav_top__user ul {
+  display: flex;
+  margin-top: 8px;
+}
+
+.nav_top__info ul li,
+.nav_top__user ul li {
+  display: flex;
+  margin-top: 4px;
+  font-size: 10px;
+}
+
+.nav_top__info ul li:first-child {
+  margin-right: 40px;
+}
+
+/* navbar */
+nav.navbar {
+  background: rgba(54, 19, 84, 0.6);
+  /* opacity: 1; */
+  min-height: 150px;
+}
+
+.logoNavBar {
+  display: flex;
+}
+
+.logoNavBar p {
+  /* font-family: "beyond_the_mountains"; */
+  padding-top: 24px;
+  padding-left: 8px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 32px;
+  /* letter-spacing: .8rem;
+  text-transform: lowercase; */
+}
+
+.navbar_navigator ul {
+  display: flex;
+  color: #fff;
+}
+
+.navbar_navigator ul li {
+  margin: 0 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+}
+
+.navbar_navigator a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -3%;
+  top: 25px;
+  width: calc(100% + 4px);
+  height: 2px;
+  background: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  opacity: 0;
+  transition: all 500ms ease;
+}
+
+.navbar_navigator a:hover::after {
+  opacity: 1;
+}
+
+.navbar_navigator a:hover {
+  color: #fff;
+}
+
+.search_area {
+  min-height: 50px;
+  color: #fff;
+}
+
+.search_area h4:hover {
+  cursor: pointer;
+  color: #fa9e1b;
+}
+.middle_title_header{
+  margin-top: 120px;	
+}
+.middle_title_header p {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 100px;
+}
+
+.middle_title_header p:nth-child(2) {
+  font-family: "beyond_the_mountains";
+  letter-spacing: 0.2rem;
+  font-size: 85px;
+  margin-top: -20px;
+}
+
+/* header -> section button explorer */
+.button_header {
+  text-align: center;
+}
+
+.button_header button {
+  padding: 16px 48px;
+  border: none;
+  border-radius: 36px;
+  background-image: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+  transform: scale(1);
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.5s ease;
+  background-size: 200%;
+}
+
+.button_header button span i {
+  font-size: 6px;
+  vertical-align: middle;
+  padding: 0 3px;
+}
+
+.button_header button span i:nth-child(2) {
+  opacity: 0.6;
+}
+
+.button_header button span i:last-child {
+  opacity: 0.4;
+}
+
+.button_header button:hover {
+  transform: scale(1.05);
+  /* background: linear-gradient(225deg, #fa9e1b, #8d4fff); */
+  background-position: right center;
+}
+
+/* main*/
+
+/*section profile*/
+section.profile_member{
+	margin: 300px 0;
+}
+section.profile_member > h2{
+  font-family: "beyond_the_mountains";
+  letter-spacing: 0.7rem;
+}
+.profile_member .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container_profile_member {
+  height: 500px;
+  width: 350px;
+  box-shadow: 0 10px 20px black;
+  background-size: cover;
+  background-position: top center;
+  font-family: "Abel", sans-serif;
+}
+
+.profile_member .gradient {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  color: white;
+}
+
+.profile_member .content {
+  position: relative;
+  /* margin-bottom: 20px; */
+  top: 270px;
+  padding: 20px;
+}
+
+.profile_member .content h2 {
+  font-weight: bold;
+}
+
+.profile_member h2 {
+  font-size: xx-large;
+  letter-spacing: -1px;
+}
+
+.profile_member .details {
+  font-style: italic;
+  color: rgb(185, 206, 224);
+  margin-top: 15px;
+}
+
+.profile_member .icons {
+  display: flex;
+  flex-direction: column;
+  top: -30px;
+  position: absolute;
+  left: 85%;
+}
+
+.profile_member .icons i {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: rgb(202, 215, 226);
+  transition: 0.3s;
+}
+
+.profile_member .icons i:hover {
+  color: white;
+}
+/* section quotes*/
+.quotes_section {
+  background: #fffdf5;
+  color: #5a5a6e;
+  min-height: 500px;
+  padding: 300px 0;
+}
+
+.quotes_section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quotes_section blockquote {
+  font-family: 'Xanh Mono', monospace;
+  font-weight: bold;
+  max-width: 600px;
+  line-height: 1.4;
+  position: relative;
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 32px;
+}
+
+.quotes_section blockquote:before,
+.quotes_section blockquote:after {
+  position: absolute;
+  color: #dbdbda;
+  font-size: 3rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+blockquote:before {
+  content: "\f10d"; /* Replace with the Font Awesome 5 icon code */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900; /* Adjust as needed */
+  left: -3.5rem;
+  top: -1rem;
+}
+
+.quotes_section blockquote:after {
+  content: "\f10e";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  right: -3.5rem;
+  bottom: -0.5rem;
+}
+
+.quotes_section cite {
+  line-height: 3;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+/* section musical_instrument*/
+.musical_instrument {
+  /* min-height: 100vh; */
+  padding-top: 150px;
+  padding-bottom: 200px;
+  background: #212121;
+}
+.musical_instrument .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.musical_instrument .card {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.musical_instrument .card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgb(28, 171, 238);
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.musical_instrument .card:nth-child(2)::before {
+  background: rgb(241, 54, 82);
+}
+
+.musical_instrument .card:last-child::before {
+  background: rgb(252, 0, 255);
+}
+
+.musical_instrument .card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.musical_instrument .card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.musical_instrument .card .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.musical_instrument .card .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.musical_instrument .card .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.musical_instrument .card .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.musical_instrument .card .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #ffce00;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.musical_instrument .card:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.musical_instrument .mouse {
+  height: 300px;
+  width: auto;
+}
+
+
+/*end main*/
+
+/* footer */
+footer.footer {
+  width: 100%;
+  min-height: 500px;
+  background-color: #31124b;
+}
+
+footer.footer .logoNavBar {
+  display: flex;
+}
+
+footer.footer .row {
+  padding-top: 50px !important;
+}
+
+footer.footer .footer_description {
+  color: #fff;
+  font-weight: bold;
+  line-height: 2.3;
+  margin-top: 1rem;
+}
+
+footer.footer .logoNavBar p {
+  padding-left: 12px;
+  color: #fff;
+  font-size: 36px;
+  line-height: 1.2 !important;
+}
+
+footer.footer .footer_social i {
+  margin-right: 15px;
+  border: 1px solid #fa9e1b;
+  padding: 10px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+footer.footer .footer_social i:hover,
+footer.footer .footer_social a:hover i {
+  color: #fbb53d;
+}
+
+footer.footer .footer_social a:nth-child(2) i {
+  padding: 10px 13px;
+}
+
+footer.footer .blogPost {
+  padding-left: 30px;
+}
+
+footer.footer .blogPost h2 {
+  margin-top: 35px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+}
+
+footer.footer .blogPost .item_inner {
+  display: flex;
+  margin-top: 15px;
+}
+
+footer.footer .blogPost .item_inner .item_inner__info {
+  margin-left: 15px;
+}
+
+footer.footer .blogPost .item_inner .item_inner__info p {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+footer.footer .blogPost .item_inner .item_inner__info span {
+  color: #fa9e1b;
+}
+
+footer.footer .tags h2 {
+  margin-top: 35px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+footer.footer .tags ul li {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+footer.footer .tags .tag_info {
+  color: #fff;
+  border: 1px solid #fbb53d;
+  padding: 10px 30px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+footer.footer .tags .tag_info:hover {
+  background-color: #fbb53d;
+}
+footer.footer .contactInfo h2 {
+  margin-top: 35px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+footer.footer .contactInfo ul li {
+  margin-top: 30px;
+}
+
+footer.footer .contactInfo ul li img {
+  margin-right: 10px;
+}
+
+footer.footer .contactInfo ul li a {
+  transition: all 0.3s ease;
+}
+
+footer.footer .contactInfo ul li a:hover {
+  color: #fbb53d;
+}
+
+footer.footer .footer_bottom {
+  text-align: center;
+  color: #cacaca;
+  font-weight: bold;
+  margin-top: 70px;
+}
+
+footer.footer .footer_bottom a {
+  color: #fa9e1b;
+  transition: all 0.2s ease;
+}
+
+footer.footer .footer_bottom a:hover {
+  opacity: 0.8;
+}
